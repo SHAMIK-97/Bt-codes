@@ -11,7 +11,7 @@ public class Url {
 	private String protocol;
 	private List<String> host;
 	private String port;
-	private String[] path;
+	private List<String> path;
 	private List<Query> query;
 	public String getRaw() {
 		return raw;
@@ -37,10 +37,11 @@ public class Url {
 	public void setPort(String port) {
 		this.port = port;
 	}
-	public String[] getPath() {
+	
+	public List<String> getPath() {
 		return path;
 	}
-	public void setPath(String[] path) {
+	public void setPath(List<String> path) {
 		this.path = path;
 	}
 	public List<Query> getQuery() {
